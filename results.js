@@ -57,7 +57,7 @@ function displayResults(data) {
     let level, levelDescription;
 
     if (overallScore >= 4.5) {
-        level = 'Digital Perfection! Are you an AI too?';
+        level = 'Digital Perfection! Are you an AI?';
         levelDescription = `${userName}, you are a digital wizard! Your skills are exceptional across all areas.`;
     } else if (overallScore >= 3.5) {
         level = 'Digital Power User';

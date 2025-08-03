@@ -296,6 +296,7 @@ body {
     display: none;
     padding: 2rem;
     animation: fadeIn 0.5s ease-out;
+    color: var(--dark-gray);
 }
 
 @keyframes fadeIn {
