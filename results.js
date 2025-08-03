@@ -109,19 +109,22 @@ function displayResults(data) {
             feedback = `Just starting out! Consider taking courses or tutorials in this area.`;
         }
 
+        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(subdomain.title)}`;
         subdomainHTML += `
             <div class="subdomain-item">
-                <div class="subdomain-header">
-                    <div class="subdomain-title">${subdomain.icon} ${subdomain.title}</div>
-                    <div class="subdomain-score">${subdomain.score.toFixed(1)}/5.0</div>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: 0%;" data-width="${percentage}%"></div>
-                </div>
-                <p class="subdomain-description">
-                    <strong>Definition:</strong> ${subdomain.description}<br><br>
-                    <strong>Your Performance:</strong> ${feedback}
-                </p>
+            <div class="subdomain-header">
+                <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" class="subdomain-title-link">
+                <div class="subdomain-title">${subdomain.icon} ${subdomain.title}</div>
+                </a>
+                <div class="subdomain-score">${subdomain.score.toFixed(1)}/5.0</div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%;" data-width="${percentage}%"></div>
+            </div>
+            <p class="subdomain-description">
+                <strong>Definition:</strong> ${subdomain.description}<br><br>
+                <strong>Your Performance:</strong> ${feedback}
+            </p>
             </div>
         `;
     });
