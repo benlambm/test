@@ -1,0 +1,27 @@
+/* styles for the results page */
+.results-top-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.results-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.results-chart-container {
+    flex-shrink: 0;
+    text-align: center;
+    position: relative;
+}
+
+#scoresChart {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}

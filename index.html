@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f5f5f5;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 1rem;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-    </style>
+    <title>Digital Literacy Quiz 2020s</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to test!</h1>
-        <p>Your new project has been created successfully.</p>
-        <p>Happy coding! 🚀</p>
-    </div>
+    <div class="quiz-container">
+        <div class="header">
+            <h1>💻 Digital Literacy Quiz</h1>
+            <p>Assess your digital skills across 6 core competency areas</p>
+        </div>
+
+        <div id="quizSection" class="quiz-content">
+            <div class="intro-text">
+                <h2>How Digitally Literate Are You?</h2>
+                <p>Rate yourself on each skill from 1 (Beginner) to 5 (Expert). Choose 1 if you don't know!</p>
+            </div>
+
+            <!-- Name Input Section -->
+            <div id="nameSection" class="name-section">
+                <h3>Let's start with your name</h3>
+                <input type="text" id="userName" class="name-input" placeholder="Enter your name" autofocus>
+                <button id="startQuizBtn" class="start-quiz-btn" onclick="startQuiz()" disabled>
+                    Start Quiz
+                </button>
+            </div>
+
+            <!-- Quiz Sections (hidden initially) -->
+            <div id="quizSections" class="quiz-sections">
+                <div class="rating-legend">
+                    <span>1 = Beginner</span>
+                    <span>2 = Basic</span>
+                    <span>3 = Intermediate</span>
+                    <span>4 = Advanced</span>
+                    <span>5 = Expert</span>
+                </div>
+
+                <form id="quizForm">
+                    <!-- Competency sections will be dynamically inserted here -->
+                </form>
+
+                <div class="submit-section">
+                    <button type="button" class="submit-btn" onclick="calculateResults()">
+                        Submit & See Results
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
 </body>
+
 </html>
