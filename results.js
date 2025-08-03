@@ -50,7 +50,12 @@ function showErrorMessage() {
 }
 
 function displayResults(data) {
-    const { userName, overallScore, subdomainScores } = data;
+    // Get userName from URL parameters first, fallback to stored data
+    const urlParams = new URLSearchParams(window.location.search);
+    const userNameFromUrl = urlParams.get('userName');
+    const userName = userNameFromUrl ? decodeURIComponent(userNameFromUrl) : (data.userName || 'Anonymous');
+    
+    const { overallScore, subdomainScores } = data;
     const resultsSection = document.getElementById('resultsSection');
 
     const scoreOutOf100 = Math.round((overallScore / 5) * 100);
