@@ -10,12 +10,22 @@ const vibrantColors = [
 
 function loadResults() {
     let results = null;
-    const sessionData = sessionStorage.getItem('quizResults');
-    if (sessionData) {
+    // Try sessionStorage first, as it's the primary store for the current session.
+    let resultsData = sessionStorage.getItem('quizResults');
+
+    // If no results are in sessionStorage, check the localStorage backup.
+    // This makes the results persistent across sessions, as intended by the backup logic.
+    if (!resultsData) {
+        resultsData = localStorage.getItem('quizResults');
+    }
+
+    if (resultsData) {
         try {
-            results = JSON.parse(sessionData);
+            results = JSON.parse(resultsData);
+            // For consistency, if we load from localStorage, also place it in sessionStorage for the current session.
+            sessionStorage.setItem('quizResults', resultsData);
         } catch (error) {
-            console.error('Error parsing session results:', error);
+            console.error('Error parsing results data:', error);
             showErrorMessage();
             return;
         }
@@ -47,19 +57,19 @@ function displayResults(data) {
     let level, levelDescription;
 
     if (overallScore >= 4.5) {
-        level = 'Digital Expert';
+        level = 'Digital Perfection! Are you an AI too?';
         levelDescription = `${userName}, you are a digital wizard! Your skills are exceptional across all areas.`;
     } else if (overallScore >= 3.5) {
-        level = 'Digitally Advanced';
+        level = 'Digital Power User';
         levelDescription = `${userName}, you have strong digital skills and are well-prepared for the modern digital world.`;
     } else if (overallScore >= 2.5) {
-        level = 'Digitally Competent';
+        level = 'Digital Explorer';
         levelDescription = `${userName}, you have solid foundational skills with room for growth in some areas.`;
     } else if (overallScore >= 1.5) {
-        level = 'Digital Learner';
+        level = 'Digital Work in Progress';
         levelDescription = `${userName}, you're on your digital journey! Focus on building your foundational skills.`;
     } else {
-        level = 'Digital Beginner';
+        level = 'Digital Newbie';
         levelDescription = `${userName}, everyone starts somewhere! You have exciting opportunities to develop your digital skills.`;
     }
 

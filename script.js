@@ -80,8 +80,8 @@ const competencies = [
     }
 ];
 
-// Store user's name
-let userName = '';
+// The global userName variable is removed to prevent state loss on page reload.
+// The user's name will be stored in sessionStorage instead.
 
 // Enable/disable start button based on name input
 function handleNameInput() {
@@ -98,12 +98,15 @@ function handleNameInput() {
 // Start the quiz
 function startQuiz() {
     const nameInput = document.getElementById('userName');
-    userName = nameInput.value.trim();
+    const userName = nameInput.value.trim();
 
     if (userName.length === 0) {
         alert('Please enter your name to begin the quiz.');
         return;
     }
+
+    // Store name in sessionStorage to make it robust against page reloads
+    sessionStorage.setItem('quizUserName', userName);
 
     // Clear any previous results to ensure fresh start
     sessionStorage.removeItem('quizResults');
@@ -208,6 +211,9 @@ function calculateResults() {
         return;
     }
 
+    // Retrieve the user's name from sessionStorage
+    const userName = sessionStorage.getItem('quizUserName') || 'Anonymous';
+
     // Calculate scores
     let totalScore = 0;
     const subdomainScores = {};
@@ -256,6 +262,7 @@ function resetQuiz() {
     // Clear stored results
     sessionStorage.removeItem('quizResults');
     localStorage.removeItem('quizResults');
+    sessionStorage.removeItem('quizUserName'); // Also clear the stored name
 
     // Reset form but keep the name
     document.getElementById('quizForm').reset();
