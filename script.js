@@ -253,8 +253,10 @@ function calculateResults() {
     sessionStorage.setItem('quizResults', JSON.stringify(resultsData));
     localStorage.setItem('quizResults', JSON.stringify(resultsData));
 
-    // Navigate to results page without URL parameters
-    window.location.href = 'results.html';
+    // Navigate to results page with userName as URL parameter
+    const urlParams = new URLSearchParams();
+    urlParams.set('userName', encodeURIComponent(userName));
+    window.location.href = `results.html?${urlParams.toString()}`;
 }
 
 // Reset quiz
