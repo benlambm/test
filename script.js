@@ -2,7 +2,7 @@
 const competencies = [
     {
         id: 'foundational',
-        title: '1. Foundational Digital Proficiency',
+        title: 'Computer Proficiency',
         icon: '💻',
         description: 'The essential skills required to operate, manage, and troubleshoot common digital hardware, software, and systems.',
         skills: [
@@ -15,7 +15,7 @@ const competencies = [
     },
     {
         id: 'information',
-        title: '2. Information Literacy',
+        title: 'Information Literacy',
         icon: '🔍',
         description: 'The ability to find, critically evaluate, and ethically synthesize digital information while distinguishing credible content from misinformation.',
         skills: [
@@ -28,7 +28,7 @@ const competencies = [
     },
     {
         id: 'content',
-        title: '3. Digital Content Creation & Presence',
+        title: 'Digital Content Creation & Online Identity',
         icon: '🎨',
         description: 'The capability to produce, format, and share a variety of digital content for different audiences and platforms.',
         skills: [
@@ -41,7 +41,7 @@ const competencies = [
     },
     {
         id: 'communication',
-        title: '4. Team Communication & Collaboration',
+        title: 'Digital Collaboration & Teamwork',
         icon: '👥',
         description: 'The skills needed to interact, network, and work with others effectively and ethically in digital environments.',
         skills: [
@@ -54,7 +54,7 @@ const competencies = [
     },
     {
         id: 'cybersecurity',
-        title: '5. Cybersecurity & Digital Citizenship',
+        title: 'Cybersecurity & Digital Citizenship',
         icon: '🔒',
         description: 'The awareness, ethics, and practices required to act responsibly and protect oneself and one\'s data in the digital world.',
         skills: [
@@ -67,7 +67,7 @@ const competencies = [
     },
     {
         id: 'emerging',
-        title: '6. New & Emerging Technologies',
+        title: 'New & Emerging Technologies',
         icon: '🤖',
         description: 'The ability to understand and leverage data, cloud platforms, and new technologies to innovate and solve problems.',
         skills: [
