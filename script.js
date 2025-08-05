@@ -6,8 +6,8 @@ const competencies = [
         icon: '💻',
         description: 'The essential skills required to operate, manage, and troubleshoot common digital hardware, software, and systems.',
         skills: [
-            'Recognize, identify, and navigate different Operating Systems (Windows, macOS, iOS, Android).',
-            'Find and work with files and folders effectively through logical folder structures, cloud storage, and shared drives.',
+            'Recognize, identify, and navigate different Operating Systems (Windows, macOS, Linux, iOS, Android).',
+            'Find and work with directories and files effectively through organized folder structures, cloud storage, and shared drives.',
             'Use Office software applications, including word processors, spreadsheets, presentation tools, and web browsers.',
             'Identify core network appliances and understand network connectivity basics (routers, modems, Wi-Fi).',
             'Perform computer & network troubleshooting to identify, research, and resolve common technical issues.'
@@ -19,11 +19,11 @@ const competencies = [
         icon: '🔍',
         description: 'The ability to find, critically evaluate, and ethically synthesize digital information while distinguishing credible content from misinformation.',
         skills: [
-            'Determine the nature of a problem or research question and information needed to solve or answer it.',
-            'Search and locate relevant information from web search engines, scholarly databases, and other digital platforms.',
+            'Specify the nature of a problem or research question and determine what information is needed.',
+            'Search and locate needed information from web search engines, scholarly databases, and other digital platforms.',
             'Evaluate information for credibility, currency, reliability, accuracy, and bias.',
             'Synthesize information from multiple sources to build knowledge, support arguments, and solve problems.',
-            'Understand and apply proper citation guidelines to avoid plagiarism.'
+            'Understand the importance of and apply proper citation guidelines to avoid plagiarism.'
         ]
     },
     {
@@ -48,8 +48,8 @@ const competencies = [
             'Communicate clearly and professionally across various digital channels, including email, messaging apps, and forums.',
             'Use collaborative platforms and tools (e.g., Microsoft Teams, Jira, Slack) to participate on group projects.',
             'Practice proper digital etiquette ("netiquette") on online platforms',
-            'Understand what data has legal and ethical responsibilities, such as respecting privacy and consent.',
-            'Feel confident contributing to collaborative products using versioning, documentation, messaging, and soft skills.'
+            'Know what data has legal and ethical responsibilities, such as respecting privacy and consent.',
+            'Feel confident contributing to work products using versioning, documentation, comments, and soft skills.'
         ]
     },
     {
@@ -61,8 +61,8 @@ const competencies = [
             'Identify and defend against common cybersecurity threats, including phishing, malware, identity theft, and scams.',
             'Implement security best practices, such as creating strong passwords, using multi-factor authentication, and securing networks.',
             'Understand digital laws and ethics, including copyright, fair use, and accessibility standards.',
-            'Recognize the responsibilities of digital citizenship, including promoting civic behavior and combating misinformation.',
-            'Understand the social implications and potential health consequences of corporate business models, personalization algorithms, and data collection practices',
+            'Embrace the responsibilities of digital citizenship, including promoting civic behavior, altruism, and combating misinformation.',
+            'Understand the social implications and potential health consequences of digital business models, personalization algorithms, and data collection practices',
         ]
     },
     {
@@ -73,8 +73,8 @@ const competencies = [
         skills: [
             'Distinguish and be able to query both traditional SQL and newer NoSQL kinds of databases.',
             'Use cloud computing services (AWS, Azure, GCP, Oracle) for data storage, software applications, and scalable problem-solving.',
-            'Familiarity with emerging technologies like generative AI (genAI), the Internet of Things (IoT), and Blockchain.',
-            'Effectively prompt, iterate upon, and evaluate AI-produced outputs to increase usefulness and trustworthiness.',
+            'Familiarity with emerging technologies like generative AI, the Internet of Things (IoT), and Blockchain.',
+            'Prompt engineering and critical evaluation of AI-produced outputs to increase usefulness and trustworthiness.',
             'Incorporate AI/ML approaches to research, identify, and implement technological solutions to complex challenges.'
         ]
     }
