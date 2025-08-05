@@ -2,15 +2,15 @@
 const competencies = [
     {
         id: 'foundational',
-        title: 'Computer Proficiency',
+        title: 'Computer Proficiency and Troubleshooting',
         icon: '💻',
         description: 'The essential skills required to operate, manage, and troubleshoot common digital hardware, software, and systems.',
         skills: [
-            'Operate and maintain digital devices (computers, smartphones, tablets) across various platforms (Windows, macOS, iOS, Android).',
-            'Navigate operating systems to manage files and data effectively through logical folder structures, cloud storage, and local drives.',
-            'Utilize essential software applications, including word processors, spreadsheets, presentation tools, and web browsers.',
-            'Identify core hardware/software components and understand network connectivity basics (routers, modems, Wi-Fi).',
-            'Perform basic troubleshooting to identify, research, and resolve common technical issues.'
+            'Recognize, identify, and navigate different Operating Systems (Windows, macOS, iOS, Android).',
+            'Find and work with files and folders effectively through logical folder structures, cloud storage, and shared drives.',
+            'Use Office software applications, including word processors, spreadsheets, presentation tools, and web browsers.',
+            'Identify core network appliances and understand network connectivity basics (routers, modems, Wi-Fi).',
+            'Perform computer & network troubleshooting to identify, research, and resolve common technical issues.'
         ]
     },
     {
@@ -19,37 +19,37 @@ const competencies = [
         icon: '🔍',
         description: 'The ability to find, critically evaluate, and ethically synthesize digital information while distinguishing credible content from misinformation.',
         skills: [
-            'Determine the nature and extent of an information need for a specific task or purpose.',
-            'Develop effective search strategies to locate relevant information from web search engines, scholarly databases, and other digital platforms.',
-            'Evaluate information for credibility, currency, reliability, accuracy, and bias using frameworks (e.g., CRAAP test).',
-            'Research and synthesize information from multiple sources to build personal knowledge, support arguments, and solve problems.',
-            'Understand and apply proper citation guidelines and respect intellectual property to avoid plagiarism.'
+            'Determine the nature of a problem or research question and information needed to solve or answer it.',
+            'Search and locate relevant information from web search engines, scholarly databases, and other digital platforms.',
+            'Evaluate information for credibility, currency, reliability, accuracy, and bias.',
+            'Synthesize information from multiple sources to build knowledge, support arguments, and solve problems.',
+            'Understand and apply proper citation guidelines to avoid plagiarism.'
         ]
     },
     {
         id: 'content',
-        title: 'Digital Content Creation & Online Identity',
+        title: 'Digital Content Creation & Management',
         icon: '🎨',
         description: 'The capability to produce, format, and share a variety of digital content for different audiences and platforms.',
         skills: [
-            'Create professional documents, spreadsheets with formulas and charts, and effective presentations with embedded multimedia.',
-            'Produce and edit original multimedia content, such as images and graphics, using modern design platforms (e.g., Canva, Figma, Adobe).',
-            'Develop and publish a basic website using foundational technologies (HTML/CSS) and understanding of hosting principles.',
+            'Design professional documents and effective presentations with embedded visuals.',
+            'Produce and/or edit images and graphics, using modern design platforms (e.g., Canva, Figma, Adobe).',
+            'Develop and publish a basic website using foundational technologies (HTML/CSS) and web hosting.',
             'Apply recognized style guides (e.g., APA, MLA) to format documents and research papers for academic and professional use.',
-            'Build and manage a positive and professional digital identity or personal brand through curated online content.'
+            'Build and manage a positive and professional digital identity or personal brand.'
         ]
     },
     {
         id: 'communication',
         title: 'Digital Collaboration & Teamwork',
         icon: '👥',
-        description: 'The skills needed to interact, network, and work with others effectively and ethically in digital environments.',
+        description: 'The skills needed to communicate and work with others effectively and ethically in digital environments.',
         skills: [
             'Communicate clearly and professionally across various digital channels, including email, messaging apps, and forums.',
             'Use collaborative platforms and tools (e.g., Microsoft Teams, Jira, Slack) to participate on group projects.',
-            'Practice proper digital etiquette ("netiquette") in diverse online communities: promoting positive, inclusive, and constructive interactions within digital communities.',
-            'Communicate information legally and ethically to a range of audiences, respecting privacy and consent.',
-            'Feel confident contributing to collaboratively-produced products using versioning, documentation, and soft skills.'
+            'Practice proper digital etiquette ("netiquette") on online platforms',
+            'Understand what data has legal and ethical responsibilities, such as respecting privacy and consent.',
+            'Feel confident contributing to collaborative products using versioning, documentation, messaging, and soft skills.'
         ]
     },
     {
@@ -58,11 +58,11 @@ const competencies = [
         icon: '🔒',
         description: 'The awareness, ethics, and practices required to act responsibly and protect oneself and one\'s data in the digital world.',
         skills: [
-            'Protect personal data by managing privacy settings and understanding data collection practices by websites and applications.',
             'Identify and defend against common cybersecurity threats, including phishing, malware, identity theft, and scams.',
             'Implement security best practices, such as creating strong passwords, using multi-factor authentication, and securing networks.',
-            'Understand and abide by digital laws and ethics, including copyright, fair use, and accessibility standards.',
-            'Recognize the responsibilities of digital citizenship, including promoting ethical behavior and combating misinformation.'
+            'Understand digital laws and ethics, including copyright, fair use, and accessibility standards.',
+            'Recognize the responsibilities of digital citizenship, including promoting civic behavior and combating misinformation.',
+            'Understand the social implications and potential health consequences of corporate business models, personalization algorithms, and data collection practices',
         ]
     },
     {
@@ -71,11 +71,11 @@ const competencies = [
         icon: '🤖',
         description: 'The ability to understand and leverage data, cloud platforms, and new technologies to innovate and solve problems.',
         skills: [
-            'Apply database principles to organize, analyze, and visualize data for making informed decisions.',
-            'Leverage cloud computing services for data storage, software applications, and scalable problem-solving.',
-            'Demonstrate literacy in emerging technologies like Artificial Intelligence (AI), the Internet of Things (IoT), and Blockchain.',
-            'Develop media literacy to critically evaluate, ethically use, and prompt AI-powered tools for assistance and innovation.',
-            'Use critical thinking and AI tools to research, identify, and implement technological solutions to complex problems.'
+            'Distinguish and be able to query both traditional SQL and newer NoSQL kinds of databases.',
+            'Use cloud computing services (AWS, Azure, GCP, Oracle) for data storage, software applications, and scalable problem-solving.',
+            'Familiarity with emerging technologies like generative AI (genAI), the Internet of Things (IoT), and Blockchain.',
+            'Effectively prompt, iterate upon, and evaluate AI-produced outputs to increase usefulness and trustworthiness.',
+            'Incorporate AI/ML approaches to research, identify, and implement technological solutions to complex challenges.'
         ]
     }
 ];
